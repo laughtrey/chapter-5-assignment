@@ -1,8 +1,20 @@
-main: main.cpp
-  g++ -o main std=c++11 *.cpp
-  run: main
-      ./main
-  edit:
-    vim main.cpp
-  clean:
-    rm main
+#
+all: main
+
+
+main : main.cpp
+	@echo "Making the executable -- some warnings can be safely ignored"
+	@g++ -o main main.cpp 
+
+run : main
+	@echo "Running the program:"
+	@./main
+
+edit:
+	@vim main.cpp
+
+debug:
+	@gdb ./main
+
+clean :
+	@rm main
