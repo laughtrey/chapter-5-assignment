@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <cassert>
 #include "Country.h"
 using namespace std;
 // Constructor
@@ -18,10 +17,8 @@ void Country::read()
    cout << "Please enter the name of the country: ";
    getline(cin, name);
    cout << "Please enter the population in millions: ";
-   assert(population > 0);
    cin >> population;
    cout << "Please enter the area in kilometers squared in millions: ";
-   assert(area > 0);
    cin >> area;
    density = (population / area);
    string remainder;
