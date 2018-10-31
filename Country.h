@@ -7,8 +7,8 @@ using namespace std;
 class Country
 {
 private:
-   double population, area, density;
-   string name;
+   double m_population, m_area, m_density;
+   std::string m_name;
 public:
    Country(); // Constructor
    void read(); // Mutator
@@ -18,5 +18,4 @@ public:
    void printpop() const; // Prints the results
    void printarea() const; // Prints the results
    void printdensity() const; // Prints the results
-};
-#endif
+};#endif

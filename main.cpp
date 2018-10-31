@@ -11,7 +11,6 @@ Date of Creation: 10/26/2018, 2:45:07 PM
 #include <string>
 #include <cmath>
 #include "Country.h"
-using namespace std;
 int main()
 {
    Country largest;
@@ -30,15 +29,15 @@ int main()
       if (next.is_denser_than(densest))
       densest = next;
 
-      cout << "More data? (y/n) ";
-      string answer;
-      getline(cin, answer);
+      std::cout << "More data? (y/n) ";
+      std::string answer;
+      getline(std::cin, answer);
       if (answer != "y")
          more = false;
    }
-   cout << "The largest country by area is: "; largest.printarea();
-   cout << "The most populated country is: "; populous.printpop();
-   cout << "The most densely populated country is: "; densest.printdensity();
+   std::cout << "The largest country by area is: "; largest.printarea();
+   std::cout << "The most populated country is: "; populous.printpop();
+   std::cout << "The most densely populated country is: "; densest.printdensity();
 
    return 0;
 }
