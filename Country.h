@@ -3,7 +3,6 @@
 /**
 class Country
 */
-using namespace std;
 class Country
 {
 private:
@@ -18,4 +17,5 @@ public:
    void printpop() const; // Prints the results
    void printarea() const; // Prints the results
    void printdensity() const; // Prints the results
-};#endif
+};
+#endif
